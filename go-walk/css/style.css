@@ -1,0 +1,206 @@
+@charset "UTF-8";
+
+/*Обнуление*/
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  src: url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  src: url("../fonts/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  color: #000000;
+  background: #ffffff;
+}
+
+body.this--overflow {
+  overflow: hidden;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container {
+  max-width: 1660px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main {
+  height: 100vh;
+  background: url("../img/background.jpg") center/cover no-repeat;
+}
+
+.main__content {
+  width: 100%;
+  max-width: 600px;
+  background: #ffffff;
+  border-radius: 20px;
+}
+
+.main__step .main__step_img {
+  width: 100%;
+}
+
+.main__step .main__step_img img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.main__step_text {
+  font-size: 20px;
+  text-align: center;
+}
+
+.main__step.this-2 {
+  display: none;
+}
+
+.main__step_bottom {
+  padding: 20px;
+}
+
+.main__step_btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+  width: 155px;
+  margin: 20px auto 0;
+}
+
+.main__step_btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: lightblue;
+  -webkit-box-shadow: 1px 1px 10px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 1px 10px 4px rgba(0, 0, 0, 0.1);
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
+}
+
+.main__step_btn.this--yes {
+  background: lightgreen;
+}
+
+.main__step_btn.fixed {
+  position: fixed;
+  z-index: 3;
+}
+
+@media (max-width: 1099px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+
+.webp main{ background: url(../img/background.webp) center/cover no-repeat; }
